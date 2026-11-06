@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -337,6 +338,35 @@ footer .logo img {
   max-width:160px;
 }
 
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.whatsapp-float {
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:9999;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#25D366;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.25);
+  transition:transform .25s,box-shadow .25s;
+}
+
+.whatsapp-float:hover {
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+.whatsapp-float svg {
+  width:32px;
+  height:32px;
+  fill:currentColor;
+}
+
 @media(max-width:750px) {
   header {
     min-height:72px;
@@ -426,6 +456,13 @@ footer .logo img {
     align-items:flex-start;
     padding:30px 7%;
   }
+
+  .whatsapp-float {
+    width:56px;
+    height:56px;
+    right:16px;
+    bottom:16px;
+  }
 }
 </style>
 </head>
@@ -482,7 +519,6 @@ footer .logo img {
 
 <main class="experiences">
 
-  <!-- FLUIR RÍO -->
   <section class="experience">
     <article class="card">
       <div class="photo river">
@@ -509,17 +545,16 @@ footer .logo img {
       <h3>Así se vive FLUIR RÍO</h3>
 
       <div class="gallery-grid">
-        <img src="images/IMG_6725.JPG" alt="Experiencia FLUIR Río">
-        <img src="images/IMG_6895.JPG" alt="Rafting en el río Mendoza">
-        <img src="images/IMG_7493.JPG" alt="Aventura FLUIR Río">
-        <img src="images/IMG_7497.JPG" alt="Rafting FLUIR">
-        <img src="images/IMG_7666.JPG" alt="Momentos en el río Mendoza">
-        <img src="images/IMG_8163.JPG" alt="Experiencia de rafting FLUIR">
+        <img src="images/IMG_6725.JPG" alt="Experiencia FLUIR Río" loading="lazy">
+        <img src="images/IMG_6895.JPG" alt="Rafting en el río Mendoza" loading="lazy">
+        <img src="images/IMG_7493.JPG" alt="Aventura FLUIR Río" loading="lazy">
+        <img src="images/IMG_7497.JPG" alt="Rafting FLUIR" loading="lazy">
+        <img src="images/IMG_7666.JPG" alt="Momentos en el río Mendoza" loading="lazy">
+        <img src="images/IMG_8163.JPG" alt="Experiencia de rafting FLUIR" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- FLUIR TREK -->
   <section class="experience">
     <article class="card reverse">
       <div class="photo mountain">
@@ -547,17 +582,16 @@ footer .logo img {
       <h3>Así se vive FLUIR TREK</h3>
 
       <div class="gallery-grid">
-        <img src="images/05.jpg" alt="Paisajes de FLUIR Trek">
-        <img src="images/06.jpg" alt="Montañas de Mendoza">
-        <img src="images/IMG_4935.JPG" alt="Trekking FLUIR">
-        <img src="images/IMG_5095.JPG" alt="Experiencia FLUIR Trek">
-        <img src="images/IMG_5108.JPG" alt="Aventura en la montaña">
-        <img src="images/file_000000008888820e982da4c63f21b3c1.png" alt="FLUIR Trek">
+        <img src="images/05.jpg" alt="Paisajes de FLUIR Trek" loading="lazy">
+        <img src="images/06.jpg" alt="Montañas de Mendoza" loading="lazy">
+        <img src="images/IMG_4935.JPG" alt="Trekking FLUIR" loading="lazy">
+        <img src="images/IMG_5095.JPG" alt="Experiencia FLUIR Trek" loading="lazy">
+        <img src="images/IMG_5108.JPG" alt="Aventura en la montaña" loading="lazy">
+        <img src="images/file_000000008888820e982da4c63f21b3c1.png" alt="FLUIR Trek" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- FLUIR VERTICAL -->
   <section class="experience">
     <article class="card">
       <div class="photo vertical">
@@ -585,17 +619,16 @@ footer .logo img {
       <h3>Así se vive FLUIR VERTICAL</h3>
 
       <div class="gallery-grid">
-        <img src="images/20261025_121020(1).jpg" alt="Descenso FLUIR Vertical">
-        <img src="images/20261025_114509(1).jpg" alt="Aventura FLUIR Vertical">
-        <img src="images/20261025_121028(1).jpg" alt="Descenso en cuerda">
-        <img src="images/20261025_114518(1).jpg" alt="Experiencia de montaña">
-        <img src="images/20261025_113623(1).jpg" alt="FLUIR Vertical en Potrerillos">
-        <img src="images/20261030_113516(1).jpg" alt="Aventura FLUIR Vertical">
+        <img src="images/20261025_121020(1).jpg" alt="Descenso FLUIR Vertical" loading="lazy">
+        <img src="images/20261025_114509(1).jpg" alt="Aventura FLUIR Vertical" loading="lazy">
+        <img src="images/20261025_121028(1).jpg" alt="Descenso en cuerda" loading="lazy">
+        <img src="images/20261025_114518(1).jpg" alt="Experiencia de montaña" loading="lazy">
+        <img src="images/20261025_113623(1).jpg" alt="FLUIR Vertical en Potrerillos" loading="lazy">
+        <img src="images/20261030_113516(1).jpg" alt="Aventura FLUIR Vertical" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- FLUIR FULL EXPERIENCE -->
   <section class="experience">
     <article class="card reverse">
       <div class="photo full">
@@ -623,12 +656,12 @@ footer .logo img {
       <h3>Así se vive FLUIR FULL EXPERIENCE</h3>
 
       <div class="gallery-grid">
-        <img src="images/20260927_113406.jpg" alt="FLUIR Full Experience">
-        <img src="images/20261021_153232.jpg" alt="Aventura FLUIR Full Experience">
-        <img src="images/20261022_161600.jpg" alt="Experiencia FLUIR">
-        <img src="images/20260927_132714.jpg" alt="Río y montaña FLUIR">
-        <img src="images/20261017_115407.jpg" alt="Aventura en Mendoza">
-        <img src="images/20260919_164825.jpg" alt="FLUIR Full Experience">
+        <img src="images/20260927_113406.jpg" alt="FLUIR Full Experience" loading="lazy">
+        <img src="images/20261021_153232.jpg" alt="Aventura FLUIR Full Experience" loading="lazy">
+        <img src="images/20261022_161600.jpg" alt="Experiencia FLUIR" loading="lazy">
+        <img src="images/20260927_132714.jpg" alt="Río y montaña FLUIR" loading="lazy">
+        <img src="images/20261017_115407.jpg" alt="Aventura en Mendoza" loading="lazy">
+        <img src="images/20260919_164825.jpg" alt="FLUIR Full Experience" loading="lazy">
       </div>
     </div>
   </section>
@@ -675,6 +708,19 @@ footer .logo img {
   <span>Potrerillos · Mendoza · Argentina</span>
   <span>© FLUIR Outdoor Experiences</span>
 </footer>
+
+<!-- ACCESO DIRECTO FLOTANTE A WHATSAPP -->
+<a
+  class="whatsapp-float"
+  href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20una%20experiencia."
+  target="_blank"
+  rel="noopener"
+  aria-label="Consultar por WhatsApp"
+>
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.1 15.1 0 1 0 16 .8zm0 27.5a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.4 12.4 0 1 1 16 28.3zm6.8-9.3c-.4-.2-2.2-1.1-2.5-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7l-1.1-2.6c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.7c.2.2 2.6 4 6.3 5.6 3.7 1.6 3.7 1.1 4.4 1 .7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+  </svg>
+</a>
 
 </body>
 </html>
