@@ -3,229 +3,675 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FLUIR Outdoor Experiences | Potrerillos</title>
-<meta name="description" content="Viví rafting, trekking y aventuras outdoor en Potrerillos, Mendoza. Conectá con la aventura. Sentí FLUIR.">
+
+<title>FLUIR Outdoor Experiences | Rafting y Aventura en Potrerillos</title>
+
+<meta name="description" content="Viví rafting, trekking y experiencias de aventura en Potrerillos, Mendoza. Descubrí FLUIR Outdoor Experiences y reservá tu próxima aventura.">
 <meta name="theme-color" content="#2F5233">
+
 <style>
 :root {
   --verde:#2F5233;
   --crema:#F4F1EA;
   --dorado:#B08D57;
+  --texto:#263329;
+  --gris:#687268;
+  --blanco:#fff;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--crema);color:#263329;font-family:Arial,sans-serif}
-a{text-decoration:none;color:inherit}
-header{height:82px;padding:15px 6%;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:30px;letter-spacing:7px;font-weight:bold;color:var(--verde)}
-.logo small{display:block;font-size:8px;letter-spacing:2px;margin-top:5px}
-nav{display:flex;gap:24px;font-size:13px}
-.btn{display:inline-block;padding:15px 22px;background:var(--dorado);color:white;font-weight:bold;font-size:13px}
-.hero{min-height:570px;padding:100px 9%;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#172e24dd,#172e2460),url('images/IMG_8166.JPG') center 55%/cover no-repeat}
-.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin:20px 0}
-.hero h1 em{color:#d6b77e;font-family:Georgia,serif}
-.hero p{line-height:1.8;max-width:450px}
-.eyebrow{font-size:10px;letter-spacing:3px;font-weight:bold;color:var(--dorado)}
-.intro{text-align:center;padding:85px 20px 45px;max-width:700px;margin:auto}
-h2{font-size:clamp(32px,5vw,48px);line-height:1.15}
-.intro h2 em{color:var(--verde);font-family:Georgia,serif}
-.intro p:last-child{color:#667066;line-height:1.8}
-.cards{padding:20px 6% 90px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:1250px;margin:auto}
-.card{background:white}
-.photo{height:230px;display:flex;align-items:flex-start;padding:18px;color:white;font-size:10px;letter-spacing:2px;font-weight:bold;background:linear-gradient(145deg,#a8b59b,#52745b 55%,#263e34)}
-.photo.river{background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url('images/IMG_8166.JPG') center/cover no-repeat}
-.photo.mountain{background:linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.12)),url('images/IMG_4925.JPG') center/cover no-repeat}
-.photo.vertical{background:linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.12)),url('images/20261025_121032(1).jpg') center/cover no-repeat}
-.photo.full{background-image: url('images/20260927_113406.jpg');background-size: cover;background-position: center;}center/cover no-repeat}
-.photo.cuatri{background:linear-gradient(145deg,#c6ae85,#85805c,#344a38)
-.card-content{padding:25px}
-.card h3{font:30px Georgia,serif;color:var(--verde);margin:10px 0}
-.card p{font-size:13px;line-height:1.8;color:#657064}
-.card a{display:inline-block;margin-top:10px;color:var(--verde);font-size:12px;font-weight:bold;border-bottom:1px solid var(--dorado);padding-bottom:5px}
-.wide{grid-column:span 2;display:grid;grid-template-columns:1.2fr 1fr}
-.wide .photo{height:100%;min-height:260px}
-.about{background:#e9e6dc;padding:80px 12%;text-align:center}
-.about p{max-width:650px;margin:20px auto;line-height:1.9;color:#667066}
-.contact{background:var(--verde);color:white;text-align:center;padding:85px 20px}
-.contact h2 em{color:#d6b77e;font-family:Georgia,serif}
-.contact p{color:#e2e8df;line-height:1.7}
-footer{padding:30px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;color:#667066;font-size:11px}
-footer .logo{font-size:23px}
-@media(max-width:700px){
- header{padding:12px 5%;height:72px}
- nav{display:none}
- header .btn{padding:12px;font-size:10px}
- .hero{min-height:520px;padding:75px 7%}
- .cards{grid-template-columns:1fr;padding:15px 5% 65px}
- .wide{grid-column:auto;display:block}
- .wide .photo{height:220px;min-height:0}
- .about{padding:65px 8%}
- footer{flex-direction:column;align-items:flex-start}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  margin:0;
+  background:var(--crema);
+  color:var(--texto);
+  font-family:Arial,sans-serif;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+header {
+  min-height:82px;
+  padding:12px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  background:var(--crema);
+}
+
+.logo img {
+  height:58px;
+  width:auto;
+  max-width:180px;
+  object-fit:contain;
+  display:block;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  gap:28px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+nav a:hover {
+  color:var(--dorado);
+}
+
+.btn {
+  display:inline-block;
+  padding:15px 23px;
+  background:var(--dorado);
+  color:white;
+  font-weight:bold;
+  font-size:12px;
+  letter-spacing:1px;
+  border-radius:3px;
+  transition:background .25s,transform .25s;
+}
+
+.btn:hover {
+  background:var(--verde);
+  transform:translateY(-2px);
+}
+
+.hero {
+  min-height:620px;
+  padding:100px 9%;
+  display:flex;
+  align-items:center;
+  color:white;
+  background:
+    linear-gradient(90deg,rgba(15,35,25,.86),rgba(15,35,25,.22)),
+    url('images/IMG_8166.JPG') center 55%/cover no-repeat;
+}
+
+.hero-content {
+  max-width:650px;
+}
+
+.eyebrow {
+  color:var(--dorado);
+  font-size:10px;
+  letter-spacing:3px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.hero h1 {
+  font-size:clamp(43px,7vw,78px);
+  line-height:1.04;
+  margin:22px 0;
+}
+
+.hero h1 em {
+  color:#d6b77e;
+  font-family:Georgia,serif;
+  font-weight:normal;
+}
+
+.hero p {
+  max-width:460px;
+  line-height:1.9;
+  font-size:16px;
+  margin-bottom:30px;
+}
+
+.intro {
+  text-align:center;
+  padding:95px 20px 55px;
+  max-width:780px;
+  margin:auto;
+}
+
+.intro h2,
+.about h2,
+.contact h2 {
+  font-size:clamp(32px,5vw,48px);
+  line-height:1.15;
+  margin:18px 0;
+}
+
+.intro h2 em,
+.about h2 em {
+  color:var(--verde);
+  font-family:Georgia,serif;
+  font-weight:normal;
+}
+
+.intro p {
+  color:var(--gris);
+  line-height:1.9;
+  font-size:15px;
+}
+
+.experiences {
+  max-width:1250px;
+  padding:10px 6% 90px;
+  margin:auto;
+}
+
+.experience {
+  margin-bottom:75px;
+}
+
+.card {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:white;
+  overflow:hidden;
+  box-shadow:0 8px 28px rgba(30,45,32,.07);
+}
+
+.card.reverse .photo {
+  order:2;
+}
+
+.photo {
+  min-height:350px;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  position:relative;
+}
+
+.photo::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(0deg,rgba(0,0,0,.25),transparent 55%);
+}
+
+.photo-label {
+  position:absolute;
+  z-index:1;
+  top:22px;
+  left:22px;
+  color:white;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.photo.river {
+  background-image:url('images/IMG_8166.JPG');
+}
+
+.photo.mountain {
+  background-image:url('images/IMG_4925.JPG');
+}
+
+.photo.vertical {
+  background-image:url('images/20261025_121032(1).jpg');
+}
+
+.photo.full {
+  background-image:url('images/20260927_113406.jpg');
+}
+
+.card-content {
+  padding:45px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.card-content h3 {
+  color:var(--verde);
+  font:normal 38px Georgia,serif;
+  margin:14px 0;
+}
+
+.card-content p {
+  color:var(--gris);
+  font-size:14px;
+  line-height:1.9;
+  margin:0 0 18px;
+}
+
+.card-link {
+  display:inline-block;
+  align-self:flex-start;
+  margin-top:8px;
+  padding-bottom:7px;
+  border-bottom:1px solid var(--dorado);
+  color:var(--verde);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:.5px;
+}
+
+.card-link:hover {
+  color:var(--dorado);
+}
+
+.gallery {
+  padding:25px 0 0;
+}
+
+.gallery h3 {
+  color:var(--verde);
+  font:normal 27px Georgia,serif;
+  margin:0 0 20px;
+}
+
+.gallery-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+
+.gallery-grid img {
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:5px;
+  transition:transform .3s;
+}
+
+.gallery-grid img:hover {
+  transform:scale(1.02);
+}
+
+.about {
+  background:#e9e6dc;
+  padding:90px 20px;
+  text-align:center;
+}
+
+.about-inner {
+  max-width:700px;
+  margin:auto;
+}
+
+.about p {
+  color:var(--gris);
+  line-height:1.9;
+  font-size:15px;
+}
+
+.contact {
+  background:var(--verde);
+  color:white;
+  text-align:center;
+  padding:90px 20px;
+}
+
+.contact h2 em {
+  color:#d6b77e;
+  font-family:Georgia,serif;
+  font-weight:normal;
+}
+
+.contact p {
+  color:#e2e8df;
+  line-height:1.8;
+  margin:20px auto 30px;
+}
+
+footer {
+  padding:30px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  color:var(--gris);
+  font-size:11px;
+}
+
+footer .logo img {
+  height:48px;
+  max-width:160px;
+}
+
+@media(max-width:750px) {
+  header {
+    min-height:72px;
+    padding:10px 5%;
+    gap:10px;
+  }
+
+  .logo img {
+    height:48px;
+    max-width:145px;
+  }
+
+  nav {
+    display:none;
+  }
+
+  header .btn {
+    padding:12px 15px;
+    font-size:10px;
+  }
+
+  .hero {
+    min-height:540px;
+    padding:75px 7%;
+    background-position:58% center;
+  }
+
+  .hero p {
+    font-size:14px;
+  }
+
+  .intro {
+    padding:70px 7% 40px;
+  }
+
+  .experiences {
+    padding:10px 5% 60px;
+  }
+
+  .experience {
+    margin-bottom:55px;
+  }
+
+  .card {
+    grid-template-columns:1fr;
+  }
+
+  .card.reverse .photo {
+    order:0;
+  }
+
+  .photo {
+    min-height:260px;
+  }
+
+  .card-content {
+    padding:30px 25px 35px;
+  }
+
+  .card-content h3 {
+    font-size:33px;
+  }
+
+  .gallery {
+    padding-top:20px;
+  }
+
+  .gallery h3 {
+    font-size:24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:9px;
+  }
+
+  .about {
+    padding:65px 8%;
+  }
+
+  .contact {
+    padding:70px 8%;
+  }
+
+  footer {
+    flex-direction:column;
+    align-items:flex-start;
+    padding:30px 7%;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <a href="#" class="logo">
-  <img src="images/logo.png" alt="FLUIR Outdoor Experiences" style="height:58px;width:auto;max-width:180px;object-fit:contain;display:block;">
-</a>
+    <img src="images/logo.png" alt="FLUIR Outdoor Experiences">
+  </a>
+
   <nav>
     <a href="#experiencias">Experiencias</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#contacto">Contacto</a>
   </nav>
-  <a class="btn" href="https://wa.me/5492614608433">Reservá</a>
+
+  <a class="btn" href="https://wa.me/5492614608433">RESERVÁ</a>
 </header>
 
 <section class="hero">
-  <div>
+  <div class="hero-content">
     <div class="eyebrow">POTRERILLOS · MENDOZA · ARGENTINA</div>
-    <h1>Conectá con la aventura.<br><em>Sentí FLUIR.</em></h1>
-    <p>Naturaleza, movimiento y experiencias que se viven de verdad.</p>
-    <a class="btn" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20reservar%20una%20experiencia.%20%C2%BFMe%20pasan%20disponibilidad%20y%20opciones%3F">QUIERO RESERVAR ↗</a>
+
+    <h1>
+      Conectá con la aventura.<br>
+      <em>Sentí FLUIR.</em>
+    </h1>
+
+    <p>
+      Naturaleza, movimiento y experiencias que se viven de verdad.
+      Descubrí Potrerillos desde una nueva perspectiva.
+    </p>
+
+    <a class="btn" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20reservar%20una%20experiencia.">
+      QUIERO RESERVAR ↗
+    </a>
   </div>
 </section>
 
 <section class="intro" id="experiencias">
   <div class="eyebrow">ELEGÍ TU PRÓXIMA EXPERIENCIA</div>
-  <h2>Hay muchas formas de <em>sentir la aventura.</em></h2>
-  <p>Explorá Potrerillos, conectá con el paisaje y descubrí nuevas experiencias al aire libre.</p>
+
+  <h2>
+    Hay muchas formas de<br>
+    <em>sentir la aventura.</em>
+  </h2>
+
+  <p>
+    Explorá Potrerillos, conectá con el paisaje y descubrí
+    experiencias auténticas al aire libre.
+  </p>
 </section>
 
-<section class="cards">
-  <article class="card">
-    <div class="photo river">01 / RÍO</div>
-    <div class="card-content">
-      <div class="eyebrow">ADRENALINA EN EL AGUA</div>
-      <h3>Fluir Río</h3>
-      <p>Recorré 12 km del río Mendoza en una experiencia de rafting llena de energía, paisajes y diversión.</p>
-      <a href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20R%C3%ADo.">Consultar experiencia ↗</a>
-        </div>
-  </article>
+<main class="experiences">
 
-    <!-- GALERÍA FLUIR RÍO -->
-<div style="grid-column:1/-1;margin:10px 0 40px;">
-  <h3 style="font-family:Georgia,serif;color:#2F5233;font-size:26px;margin:0 0 18px;">
-    Así se vive FLUIR RÍO
-  </h3>
+  <!-- FLUIR RÍO -->
+  <section class="experience">
+    <article class="card">
+      <div class="photo river">
+        <span class="photo-label">01 / RÍO</span>
+      </div>
 
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
-    <img src="images/IMG_6725.JPG" alt="Experiencia FLUIR Río" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_6895.JPG" alt="Rafting en el río Mendoza" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_7493.JPG" alt="Aventura FLUIR Río" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_7497.JPG" alt="Rafting FLUIR" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_7666.JPG" alt="Momentos en el río Mendoza" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_8163.JPG" alt="Experiencia de rafting FLUIR" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-  </div>
-</div>
+      <div class="card-content">
+        <div class="eyebrow">ADRENALINA EN EL AGUA</div>
+        <h3>FLUIR RÍO</h3>
 
-  <article class="card">
-    <div class="photo mountain">02 / MONTAÑA</div>
-    <div class="card-content">
-      <div class="eyebrow">PASO A PASO</div>
-      <h3>Fluir Trek</h3>
-      <p>Caminatas para descubrir el entorno, disfrutar las vistas y elegir tu propio ritmo.</p>
-      <a href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20Trek.">Consultar experiencia ↗</a>
+        <p>
+          Recorré 12 km del río Mendoza en una experiencia
+          de rafting llena de energía, paisajes y diversión.
+          Viví los rápidos acompañado por guías profesionales.
+        </p>
+
+        <a class="card-link" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20R%C3%ADo.">
+          CONSULTAR EXPERIENCIA ↗
+        </a>
+      </div>
+    </article>
+
+    <div class="gallery">
+      <h3>Así se vive FLUIR RÍO</h3>
+
+      <div class="gallery-grid">
+        <img src="images/IMG_6725.JPG" alt="Experiencia FLUIR Río">
+        <img src="images/IMG_6895.JPG" alt="Rafting en el río Mendoza">
+        <img src="images/IMG_7493.JPG" alt="Aventura FLUIR Río">
+        <img src="images/IMG_7497.JPG" alt="Rafting FLUIR">
+        <img src="images/IMG_7666.JPG" alt="Momentos en el río Mendoza">
+        <img src="images/IMG_8163.JPG" alt="Experiencia de rafting FLUIR">
+      </div>
     </div>
-  </article>
-<!-- GALERÍA FLUIR TREK -->
-<div style="grid-column:1/-1;margin:10px 0 40px;">
-  <h3 style="font-family:Georgia,serif;color:#2F5233;font-size:26px;margin:0 0 18px;">
-    Así se vive FLUIR TREK
-  </h3>
+  </section>
 
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
-    <img src="images/05.jpg" alt="Paisajes de FLUIR Trek" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/06.jpg" alt="Montañas de Mendoza" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_4935.JPG" alt="Trekking FLUIR" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_5095.JPG" alt="Experiencia FLUIR Trek" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/IMG_5108.JPG" alt="Aventura en la montaña" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/file_000000008888820e982da4c63f21b3c1.png" alt="FLUIR Trek" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-  </div>
-</div>
-  <article class="card">
-    <div class="photo vertical">03 / VERTICAL</div>
-    <div class="card-content">
-      <div class="eyebrow">UNA NUEVA PERSPECTIVA</div>
-      <h3>Fluir Vertical</h3>
-      <p>Un trekking hasta el punto de descenso y la emoción de bajar aproximadamente 20 metros por cuerda, acompañado por un guía.</p>
-      <a href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20Vertical.">Consultar experiencia ↗</a>
+  <!-- FLUIR TREK -->
+  <section class="experience">
+    <article class="card reverse">
+      <div class="photo mountain">
+        <span class="photo-label">02 / MONTAÑA</span>
+      </div>
+
+      <div class="card-content">
+        <div class="eyebrow">PASO A PASO</div>
+        <h3>FLUIR TREK</h3>
+
+        <p>
+          Descubrí los paisajes de montaña de Potrerillos
+          a través de caminatas guiadas. Una experiencia
+          para conectar con la naturaleza y disfrutar
+          cada recorrido a tu propio ritmo.
+        </p>
+
+        <a class="card-link" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20Trek.">
+          CONSULTAR EXPERIENCIA ↗
+        </a>
+      </div>
+    </article>
+
+    <div class="gallery">
+      <h3>Así se vive FLUIR TREK</h3>
+
+      <div class="gallery-grid">
+        <img src="images/05.jpg" alt="Paisajes de FLUIR Trek">
+        <img src="images/06.jpg" alt="Montañas de Mendoza">
+        <img src="images/IMG_4935.JPG" alt="Trekking FLUIR">
+        <img src="images/IMG_5095.JPG" alt="Experiencia FLUIR Trek">
+        <img src="images/IMG_5108.JPG" alt="Aventura en la montaña">
+        <img src="images/file_000000008888820e982da4c63f21b3c1.png" alt="FLUIR Trek">
+      </div>
     </div>
-  </article>
-<!-- GALERÍA FLUIR VERTICAL -->
-<div style="grid-column:1/-1;margin:10px 0 40px;">
-  <h3 style="font-family:Georgia,serif;color:#2F5233;font-size:26px;margin:0 0 18px;">
-    Así se vive FLUIR VERTICAL
-  </h3>
+  </section>
 
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
-    <img src="images/20261025_121020(1).jpg" alt="Descenso FLUIR Vertical" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/20261025_114509(1).jpg" alt="Aventura FLUIR Vertical" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/20261025_121028(1).jpg" alt="Descenso en cuerda" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/20261025_114518(1).jpg" alt="Experiencia de montaña" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/20261025_113623(1).jpg" alt="FLUIR Vertical en Potrerillos" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-    <img src="images/20261030_113516(1).jpg" alt="Aventura FLUIR Vertical" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-  </div>
-</div>
-  <article class="card">
-    <div class="photo cuatri">04 / CUATRICICLOS</div>
-    <div class="card-content">
-      <div class="eyebrow">RECORRÉ A TU MANERA</div>
-      <h3>Fluir Cuatri</h3>
-      <p>Una salida guiada para descubrir los paisajes de Potrerillos desde otro lugar. No necesitás experiencia previa.</p>
-      <a href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20Cuatri.">Consultar experiencia ↗</a>
+  <!-- FLUIR VERTICAL -->
+  <section class="experience">
+    <article class="card">
+      <div class="photo vertical">
+        <span class="photo-label">03 / VERTICAL</span>
+      </div>
+
+      <div class="card-content">
+        <div class="eyebrow">UNA NUEVA PERSPECTIVA</div>
+        <h3>FLUIR VERTICAL</h3>
+
+        <p>
+          Un trekking hasta el punto de descenso y la emoción
+          de bajar aproximadamente 20 metros por cuerda,
+          acompañado por un guía. Desafiá tus límites
+          y descubrí la montaña desde otra perspectiva.
+        </p>
+
+        <a class="card-link" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Fluir%20Vertical.">
+          CONSULTAR EXPERIENCIA ↗
+        </a>
+      </div>
+    </article>
+
+    <div class="gallery">
+      <h3>Así se vive FLUIR VERTICAL</h3>
+
+      <div class="gallery-grid">
+        <img src="images/20261025_121020(1).jpg" alt="Descenso FLUIR Vertical">
+        <img src="images/20261025_114509(1).jpg" alt="Aventura FLUIR Vertical">
+        <img src="images/20261025_121028(1).jpg" alt="Descenso en cuerda">
+        <img src="images/20261025_114518(1).jpg" alt="Experiencia de montaña">
+        <img src="images/20261025_113623(1).jpg" alt="FLUIR Vertical en Potrerillos">
+        <img src="images/20261030_113516(1).jpg" alt="Aventura FLUIR Vertical">
+      </div>
     </div>
-  
-</div>
-  <article class="card wide">
-    <div class="photo full">05 / DÍA COMPLETO</div>
-    <div class="card-content">
-      <div class="eyebrow">DOS AVENTURAS, UN GRAN DÍA</div>
-      <h3>Full Experience</h3>
-      <p>Combiná trekking y rafting en una jornada especial, con una picada para compartir y disfrutar el entorno.</p>
-      <a href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Full%20Experience.">Consultar experiencia ↗</a>
+  </section>
+
+  <!-- FLUIR FULL EXPERIENCE -->
+  <section class="experience">
+    <article class="card reverse">
+      <div class="photo full">
+        <span class="photo-label">04 / DÍA COMPLETO</span>
+      </div>
+
+      <div class="card-content">
+        <div class="eyebrow">DOS AVENTURAS, UN GRAN DÍA</div>
+        <h3>FLUIR FULL EXPERIENCE</h3>
+
+        <p>
+          Combiná rafting en el río Mendoza, una picada
+          para compartir y una experiencia de montaña.
+          Una jornada completa para disfrutar Potrerillos,
+          conectar con la naturaleza y llevarte recuerdos únicos.
+        </p>
+
+        <a class="card-link" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20quiero%20consultar%20por%20Full%20Experience.">
+          CONSULTAR EXPERIENCIA ↗
+        </a>
+      </div>
+    </article>
+
+    <div class="gallery">
+      <h3>Así se vive FLUIR FULL EXPERIENCE</h3>
+
+      <div class="gallery-grid">
+        <img src="images/20260927_113406.jpg" alt="FLUIR Full Experience">
+        <img src="images/20261021_153232.jpg" alt="Aventura FLUIR Full Experience">
+        <img src="images/20261022_161600.jpg" alt="Experiencia FLUIR">
+        <img src="images/20260927_132714.jpg" alt="Río y montaña FLUIR">
+        <img src="images/20261017_115407.jpg" alt="Aventura en Mendoza">
+        <img src="images/20260919_164825.jpg" alt="FLUIR Full Experience">
+      </div>
     </div>
-  </article>
-</section>
-<!-- GALERÍA FLUIR FULL EXPERIENCE -->
-<div style="grid-column:1/-1;margin:10px 0 40px;">
-  <h3 style="font-family:Georgia,serif;color:#2F5233;font-size:26px;margin:0 0 18px;">
-    Así se vive FLUIR FULL EXPERIENCE
-  </h3>
+  </section>
 
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
+</main>
 
-    <img src="images/20260927_113406.jpg" alt="FLUIR Full Experience" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-
-    <img src="images/20261021_153232.jpg" alt="Aventura FLUIR Full Experience" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-
-    <img src="images/20261022_161600.jpg" alt="Experiencia FLUIR" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-
-    <img src="images/20260927_132714.jpg" alt="Río y montaña FLUIR" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-
-    <img src="images/20261017_115407.jpg" alt="Aventura en Mendoza" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-
-    <img src="images/20260919_164825.jpg" alt="FLUIR Full Experience" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-
-  </div>
 <section class="about" id="nosotros">
-  <div class="eyebrow">MÁS QUE UNA ACTIVIDAD</div>
-  <h2>La aventura también es <em>cómo la vivís.</em></h2>
-  <p>En FLUIR creemos en las experiencias auténticas, el contacto con la naturaleza y la emoción de compartir el camino. Te acompañamos para que disfrutes cada momento.</p>
+  <div class="about-inner">
+    <div class="eyebrow">MÁS QUE UNA ACTIVIDAD</div>
+
+    <h2>
+      La aventura también es<br>
+      <em>cómo la vivís.</em>
+    </h2>
+
+    <p>
+      En FLUIR creemos en las experiencias auténticas,
+      el contacto con la naturaleza y la emoción de compartir
+      el camino. Te acompañamos para que disfrutes cada momento
+      y vivas Potrerillos de una manera diferente.
+    </p>
+  </div>
 </section>
 
 <section class="contact" id="contacto">
   <div class="eyebrow">TU PRÓXIMA AVENTURA EMPIEZA ACÁ</div>
+
   <h2>¿Listo para <em>FLUIR?</em></h2>
-  <p>Escribinos y te ayudamos a elegir tu experiencia en Potrerillos.</p>
-  <a class="btn" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20estamos%20interesados%20en%20hacer%20actividades.">HABLÁ CON NOSOTROS POR WHATSAPP ↗</a>
+
+  <p>
+    Escribinos y te ayudamos a elegir tu experiencia en Potrerillos.
+  </p>
+
+  <a class="btn" href="https://wa.me/5492614608433?text=Hola%20FLUIR%2C%20estamos%20interesados%20en%20hacer%20actividades.">
+    HABLÁ CON NOSOTROS POR WHATSAPP ↗
+  </a>
 </section>
 
 <footer>
   <a href="#" class="logo">
-  <img src="images/logo.png" alt="FLUIR Outdoor Experiences" style="height:48px;width:auto;max-width:160px;object-fit:contain;display:block;">
-</a>
+    <img src="images/logo.png" alt="FLUIR Outdoor Experiences">
+  </a>
+
   <span>Potrerillos · Mendoza · Argentina</span>
   <span>© FLUIR Outdoor Experiences</span>
 </footer>
