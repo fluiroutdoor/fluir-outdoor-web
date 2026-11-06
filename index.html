@@ -5,13 +5,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>FLUIR Outdoor Experiences | Rafting y Aventura en Potrerillos</title>
-<meta name="description" content="Viví rafting, trekking y experiencias de aventura en Potrerillos, Mendoza. Descubrí FLUIR Outdoor Experiences y reservá tu próxima aventura.">
+<title>Rafting en Potrerillos, Mendoza | FLUIR Outdoor Experiences</title>
+
+<meta name="description" content="Viví rafting en el río Mendoza, trekking y aventura en Potrerillos. Descubrí FLUIR Outdoor Experiences y reservá tu próxima experiencia en Mendoza.">
+
 <meta name="theme-color" content="#2F5233">
-<meta property="og:title" content="FLUIR Outdoor Experiences | Potrerillos">
-<meta property="og:description" content="Rafting, trekking y aventura en Potrerillos, Mendoza. Conectá con la aventura. Sentí FLUIR.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fluiroutdoor.com.ar/">
+
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="FLUIR Outdoor Experiences">
+<meta property="og:title" content="Rafting en Potrerillos, Mendoza | FLUIR">
+<meta property="og:description" content="Rafting en el río Mendoza, trekking y experiencias de aventura en Potrerillos. Conectá con la aventura. Sentí FLUIR.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://fluiroutdoor.com.ar">
+<meta property="og:url" content="https://fluiroutdoor.com.ar/">
+<meta property="og:image" content="https://fluiroutdoor.com.ar/images/IMG_8166.JPG">
+<meta property="og:image:alt" content="Experiencia de rafting FLUIR en el río Mendoza">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rafting en Potrerillos | FLUIR Outdoor Experiences">
+<meta name="twitter:description" content="Rafting, trekking y aventura en Potrerillos, Mendoza.">
+<meta name="twitter:image" content="https://fluiroutdoor.com.ar/images/IMG_8166.JPG">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "FLUIR Outdoor Experiences",
+  "url": "https://fluiroutdoor.com.ar/",
+  "image": "https://fluiroutdoor.com.ar/images/IMG_8166.JPG",
+  "description": "Experiencias outdoor y turismo aventura en Potrerillos, Mendoza. Rafting en el río Mendoza, trekking y actividades de aventura.",
+  "telephone": "+5492614608433",
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Potrerillos, Mendoza, Argentina"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Mendoza, Argentina"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/fluiroutdoorexperience/"
+  ],
+  "knowsAbout": [
+    "Rafting en el río Mendoza",
+    "Rafting en Potrerillos",
+    "Trekking en Potrerillos",
+    "Turismo aventura en Mendoza",
+    "Experiencias outdoor"
+  ]
+}
+</script>
 
 <style>
 :root {
@@ -22,15 +68,26 @@
   --gris:#687268;
   --blanco:#fff;
 }
+
 * { box-sizing:border-box; }
-html { scroll-behavior:smooth; scroll-padding-top:20px; }
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:20px;
+}
+
 body {
   margin:0;
   background:var(--crema);
   color:var(--texto);
   font-family:Arial,sans-serif;
 }
-a { color:inherit; text-decoration:none; }
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
 header {
   min-height:82px;
   padding:12px 6%;
@@ -40,6 +97,7 @@ header {
   gap:20px;
   background:var(--crema);
 }
+
 .logo img {
   height:58px;
   width:auto;
@@ -47,6 +105,7 @@ header {
   object-fit:contain;
   display:block;
 }
+
 nav {
   display:flex;
   align-items:center;
@@ -54,7 +113,9 @@ nav {
   font-size:13px;
   font-weight:bold;
 }
+
 nav a:hover { color:var(--dorado); }
+
 .btn {
   display:inline-block;
   padding:15px 23px;
@@ -67,10 +128,12 @@ nav a:hover { color:var(--dorado); }
   text-align:center;
   transition:background .25s,transform .25s;
 }
+
 .btn:hover {
   background:var(--verde);
   transform:translateY(-2px);
 }
+
 .hero {
   min-height:620px;
   padding:100px 9%;
@@ -81,7 +144,9 @@ nav a:hover { color:var(--dorado); }
     linear-gradient(90deg,rgba(15,35,25,.86),rgba(15,35,25,.22)),
     url('images/IMG_8166.JPG') center 55%/cover no-repeat;
 }
+
 .hero-content { max-width:650px; }
+
 .eyebrow {
   color:var(--dorado);
   font-size:10px;
@@ -89,54 +154,65 @@ nav a:hover { color:var(--dorado); }
   font-weight:bold;
   text-transform:uppercase;
 }
+
 .hero h1 {
   font-size:clamp(43px,7vw,78px);
   line-height:1.04;
   margin:22px 0;
 }
+
 .hero h1 em {
   color:#d6b77e;
   font-family:Georgia,serif;
   font-weight:normal;
 }
+
 .hero p {
   max-width:460px;
   line-height:1.9;
   font-size:16px;
   margin-bottom:30px;
 }
+
 .hero-actions {
   display:flex;
   align-items:center;
   gap:15px;
   flex-wrap:wrap;
 }
+
 .hero .btn {
   padding:17px 25px;
   background:#B08D57;
 }
+
 .hero .btn:hover { background:#8d7045; }
+
 .intro {
   text-align:center;
   padding:95px 20px 55px;
   max-width:780px;
   margin:auto;
 }
+
 .intro h2,.about h2,.contact h2 {
   font-size:clamp(32px,5vw,48px);
   line-height:1.15;
   margin:18px 0;
 }
+
 .intro h2 em,.about h2 em {
   color:var(--verde);
   font-family:Georgia,serif;
   font-weight:normal;
 }
+
 .intro p {
   color:var(--gris);
   line-height:1.9;
   font-size:15px;
 }
+
 .choose-help {
   max-width:760px;
   margin:0 auto 65px;
@@ -145,23 +221,28 @@ nav a:hover { color:var(--dorado); }
   text-align:center;
   border-radius:5px;
 }
+
 .choose-help h3 {
   color:var(--verde);
   font:normal 25px Georgia,serif;
   margin:0 0 10px;
 }
+
 .choose-help p {
   color:var(--gris);
   font-size:14px;
   line-height:1.7;
   margin:0 0 18px;
 }
+
 .experiences {
   max-width:1250px;
   padding:10px 6% 90px;
   margin:auto;
 }
+
 .experience { margin-bottom:75px; }
+
 .card {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -169,7 +250,9 @@ nav a:hover { color:var(--dorado); }
   overflow:hidden;
   box-shadow:0 8px 28px rgba(30,45,32,.07);
 }
+
 .card.reverse .photo { order:2; }
+
 .photo {
   min-height:350px;
   background-position:center;
@@ -177,12 +260,14 @@ nav a:hover { color:var(--dorado); }
   background-repeat:no-repeat;
   position:relative;
 }
+
 .photo::after {
   content:"";
   position:absolute;
   inset:0;
   background:linear-gradient(0deg,rgba(0,0,0,.25),transparent 55%);
 }
+
 .photo-label {
   position:absolute;
   z-index:1;
@@ -193,10 +278,12 @@ nav a:hover { color:var(--dorado); }
   font-weight:bold;
   letter-spacing:2px;
 }
+
 .photo.river { background-image:url('images/IMG_8166.JPG'); }
 .photo.mountain { background-image:url('images/IMG_4925.JPG'); }
 .photo.vertical { background-image:url('images/20261025_121032(1).jpg'); }
 .photo.full { background-image:url('images/20260927_113406.jpg'); }
+
 .card-content {
   padding:45px;
   display:flex;
@@ -204,17 +291,20 @@ nav a:hover { color:var(--dorado); }
   align-items:flex-start;
   justify-content:center;
 }
+
 .card-content h3 {
   color:var(--verde);
   font:normal 38px Georgia,serif;
   margin:14px 0;
 }
+
 .card-content p {
   color:var(--gris);
   font-size:14px;
   line-height:1.9;
   margin:0 0 18px;
 }
+
 .card-link {
   display:inline-block;
   margin-top:8px;
@@ -228,22 +318,27 @@ nav a:hover { color:var(--dorado); }
   letter-spacing:.7px;
   transition:background .25s,transform .25s;
 }
+
 .card-link:hover {
   background:var(--verde);
   border-color:var(--verde);
   transform:translateY(-2px);
 }
+
 .gallery { padding:25px 0 0; }
+
 .gallery h3 {
   color:var(--verde);
   font:normal 27px Georgia,serif;
   margin:0 0 20px;
 }
+
 .gallery-grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:12px;
 }
+
 .gallery-grid img {
   display:block;
   width:100%;
@@ -252,49 +347,59 @@ nav a:hover { color:var(--dorado); }
   border-radius:5px;
   transition:transform .3s;
 }
+
 .gallery-grid img:hover { transform:scale(1.02); }
 
 /* TESTIMONIOS */
+
 .testimonials {
   background:#e9e6dc;
   padding:90px 6%;
 }
+
 .testimonials-inner {
   max-width:1150px;
   margin:auto;
 }
+
 .testimonials-heading {
   text-align:center;
   max-width:700px;
   margin:0 auto 45px;
 }
+
 .testimonials-heading h2 {
   color:var(--verde);
   font:normal clamp(34px,5vw,48px) Georgia,serif;
   line-height:1.15;
   margin:18px 0;
 }
+
 .testimonials-heading h2 em {
   color:var(--dorado);
   font-weight:normal;
 }
+
 .testimonials-heading p {
   color:var(--gris);
   font-size:15px;
   line-height:1.8;
 }
+
 .testimonial-grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:24px;
   align-items:start;
 }
+
 .testimonial-card {
   background:white;
   padding:12px;
   border-radius:6px;
   box-shadow:0 8px 25px rgba(30,45,32,.08);
 }
+
 .testimonial-video {
   width:100%;
   aspect-ratio:9/16;
@@ -303,10 +408,12 @@ nav a:hover { color:var(--dorado); }
   background:#172019;
   border-radius:4px;
 }
+
 .testimonial-caption {
   padding:15px 8px 8px;
   text-align:center;
 }
+
 .testimonial-caption span {
   color:var(--dorado);
   font-size:10px;
@@ -314,54 +421,65 @@ nav a:hover { color:var(--dorado); }
   letter-spacing:2px;
   text-transform:uppercase;
 }
+
 .testimonial-caption h3 {
   color:var(--verde);
   font:normal 22px Georgia,serif;
   margin:8px 0 5px;
 }
+
 .testimonial-caption p {
   color:var(--gris);
   font-size:12px;
   line-height:1.6;
   margin:0;
 }
+
 .testimonial-cta {
   text-align:center;
   margin-top:38px;
 }
+
 .testimonial-cta p {
   color:var(--gris);
   font-size:14px;
   line-height:1.8;
   margin-bottom:20px;
 }
+
 .about {
   background:#e9e6dc;
   padding:90px 20px;
   text-align:center;
 }
+
 .about-inner { max-width:700px; margin:auto; }
+
 .about p {
   color:var(--gris);
   line-height:1.9;
   font-size:15px;
 }
+
 .contact {
   background:var(--verde);
   color:white;
   text-align:center;
   padding:90px 20px;
 }
+
 .contact h2 em {
   color:#d6b77e;
   font-family:Georgia,serif;
   font-weight:normal;
 }
+
 .contact p {
   color:#e2e8df;
   line-height:1.8;
   margin:20px auto 30px;
 }
+
 footer {
   padding:30px 6%;
   display:flex;
@@ -372,9 +490,11 @@ footer {
   color:var(--gris);
   font-size:11px;
 }
+
 footer .logo img { height:48px; max-width:160px; }
 
 /* WHATSAPP FLOTANTE */
+
 .whatsapp-float {
   position:fixed;
   right:22px;
@@ -391,15 +511,18 @@ footer .logo img { height:48px; max-width:160px; }
   box-shadow:0 5px 20px rgba(0,0,0,.25);
   transition:transform .25s,box-shadow .25s;
 }
+
 .whatsapp-float:hover {
   transform:translateY(-4px) scale(1.05);
   box-shadow:0 8px 25px rgba(0,0,0,.3);
 }
+
 .whatsapp-float svg {
   width:32px;
   height:32px;
   fill:currentColor;
 }
+
 a:focus-visible {
   outline:3px solid var(--dorado);
   outline-offset:4px;
@@ -411,56 +534,73 @@ a:focus-visible {
     padding:10px 5%;
     gap:10px;
   }
+
   .logo img { height:48px; max-width:145px; }
   nav { display:none; }
+
   header .btn {
     padding:12px 15px;
     font-size:10px;
   }
+
   .hero {
     min-height:540px;
     padding:75px 7%;
     background-position:58% center;
   }
+
   .hero p { font-size:14px; }
   .hero-actions { align-items:flex-start; }
   .hero .btn { padding:15px 19px; }
+
   .intro { padding:70px 7% 40px; }
+
   .choose-help {
     margin:0 5% 50px;
     padding:25px 18px;
   }
+
   .experiences { padding:10px 5% 60px; }
   .experience { margin-bottom:55px; }
+
   .card { grid-template-columns:1fr; }
   .card.reverse .photo { order:0; }
   .photo { min-height:260px; }
+
   .card-content { padding:30px 25px 35px; }
   .card-content h3 { font-size:33px; }
+
   .gallery { padding-top:20px; }
   .gallery h3 { font-size:24px; }
+
   .gallery-grid {
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:9px;
   }
+
   .testimonials { padding:65px 7%; }
   .testimonials-heading { margin-bottom:30px; }
+
   .testimonial-grid {
     grid-template-columns:1fr;
     gap:25px;
   }
+
   .testimonial-card {
     width:100%;
     max-width:340px;
     margin:auto;
   }
+
   .about { padding:65px 8%; }
   .contact { padding:70px 8%; }
+
   footer {
     flex-direction:column;
     align-items:flex-start;
     padding:30px 7%;
   }
+
   .whatsapp-float {
     width:56px;
     height:56px;
@@ -495,13 +635,14 @@ a:focus-visible {
     <div class="eyebrow">POTRERILLOS · MENDOZA · ARGENTINA</div>
 
     <h1>
-      Conectá con la aventura.<br>
-      <em>Sentí FLUIR.</em>
+      Rafting y aventura<br>
+      en <em>Potrerillos.</em>
     </h1>
 
     <p>
-      Naturaleza, movimiento y experiencias que se viven de verdad.
-      Descubrí Potrerillos desde una nueva perspectiva.
+      Viví rafting en el río Mendoza, trekking y experiencias
+      de aventura en Potrerillos. Naturaleza, movimiento y
+      momentos que se viven de verdad.
     </p>
 
     <div class="hero-actions">
@@ -516,14 +657,16 @@ a:focus-visible {
 </section>
 
 <section class="intro" id="experiencias">
-  <div class="eyebrow">ELEGÍ TU PRÓXIMA EXPERIENCIA</div>
+  <div class="eyebrow">FLUIR OUTDOOR EXPERIENCES · MENDOZA</div>
   <h2>
-    Hay muchas formas de<br>
-    <em>sentir la aventura.</em>
+    Rafting, trekking y<br>
+    <em>aventura en Potrerillos.</em>
   </h2>
   <p>
-    Explorá Potrerillos, conectá con el paisaje y descubrí
-    experiencias auténticas al aire libre.
+    Descubrí nuestras experiencias de turismo aventura en
+    Potrerillos, Mendoza. Recorré el río Mendoza haciendo
+    rafting, explorá la montaña con nuestros trekkings y
+    viví nuevas emociones al aire libre.
   </p>
 </section>
 
@@ -542,7 +685,7 @@ a:focus-visible {
 
   <section class="experience">
     <article class="card">
-      <div class="photo river">
+      <div class="photo river" role="img" aria-label="Rafting en el río Mendoza, Potrerillos">
         <span class="photo-label">01 / RÍO</span>
       </div>
       <div class="card-content">
@@ -561,19 +704,19 @@ a:focus-visible {
     <div class="gallery">
       <h3>Así se vive FLUIR RÍO</h3>
       <div class="gallery-grid">
-        <img src="images/IMG_6725.JPG" alt="Experiencia FLUIR Río" loading="lazy">
-        <img src="images/IMG_6895.JPG" alt="Rafting en el río Mendoza" loading="lazy">
-        <img src="images/IMG_7493.JPG" alt="Aventura FLUIR Río" loading="lazy">
-        <img src="images/IMG_7497.JPG" alt="Rafting FLUIR" loading="lazy">
-        <img src="images/IMG_7666.JPG" alt="Momentos en el río Mendoza" loading="lazy">
-        <img src="images/IMG_8163.JPG" alt="Experiencia de rafting FLUIR" loading="lazy">
+        <img src="images/IMG_6725.JPG" alt="Rafting en el río Mendoza con FLUIR" loading="lazy">
+        <img src="images/IMG_6895.JPG" alt="Descenso de rafting en Potrerillos" loading="lazy">
+        <img src="images/IMG_7493.JPG" alt="Aventura de rafting FLUIR" loading="lazy">
+        <img src="images/IMG_7497.JPG" alt="Experiencia de rafting en Mendoza" loading="lazy">
+        <img src="images/IMG_7666.JPG" alt="Participantes disfrutando el río Mendoza" loading="lazy">
+        <img src="images/IMG_8163.JPG" alt="Rafting y aventura en Potrerillos" loading="lazy">
       </div>
     </div>
   </section>
 
   <section class="experience">
     <article class="card reverse">
-      <div class="photo mountain">
+      <div class="photo mountain" role="img" aria-label="Trekking y paisajes de montaña en Potrerillos, Mendoza">
         <span class="photo-label">02 / MONTAÑA</span>
       </div>
       <div class="card-content">
@@ -593,19 +736,19 @@ a:focus-visible {
     <div class="gallery">
       <h3>Así se vive FLUIR TREK</h3>
       <div class="gallery-grid">
-        <img src="images/05.jpg" alt="Paisajes de FLUIR Trek" loading="lazy">
-        <img src="images/06.jpg" alt="Montañas de Mendoza" loading="lazy">
-        <img src="images/IMG_4935.JPG" alt="Trekking FLUIR" loading="lazy">
-        <img src="images/IMG_5095.JPG" alt="Experiencia FLUIR Trek" loading="lazy">
-        <img src="images/IMG_5108.JPG" alt="Aventura en la montaña" loading="lazy">
-        <img src="images/file_000000008888820e982da4c63f21b3c1.png" alt="FLUIR Trek" loading="lazy">
+        <img src="images/05.jpg" alt="Paisajes de montaña de FLUIR Trek" loading="lazy">
+        <img src="images/06.jpg" alt="Montañas de Potrerillos, Mendoza" loading="lazy">
+        <img src="images/IMG_4935.JPG" alt="Caminata de trekking FLUIR" loading="lazy">
+        <img src="images/IMG_5095.JPG" alt="Experiencia de trekking en Mendoza" loading="lazy">
+        <img src="images/IMG_5108.JPG" alt="Aventura y naturaleza en la montaña" loading="lazy">
+        <img src="images/file_000000008888820e982da4c63f21b3c1.png" alt="FLUIR Trek en Potrerillos" loading="lazy">
       </div>
     </div>
   </section>
 
   <section class="experience">
     <article class="card">
-      <div class="photo vertical">
+      <div class="photo vertical" role="img" aria-label="Descenso en cuerda en una experiencia de aventura FLUIR">
         <span class="photo-label">03 / VERTICAL</span>
       </div>
       <div class="card-content">
@@ -625,11 +768,11 @@ a:focus-visible {
     <div class="gallery">
       <h3>Así se vive FLUIR VERTICAL</h3>
       <div class="gallery-grid">
-        <img src="images/20261025_121020(1).jpg" alt="Descenso FLUIR Vertical" loading="lazy">
-        <img src="images/20261025_114509(1).jpg" alt="Aventura FLUIR Vertical" loading="lazy">
-        <img src="images/20261025_121028(1).jpg" alt="Descenso en cuerda" loading="lazy">
-        <img src="images/20261025_114518(1).jpg" alt="Experiencia de montaña" loading="lazy">
-        <img src="images/20261025_113623(1).jpg" alt="FLUIR Vertical en Potrerillos" loading="lazy">
+        <img src="images/20261025_121020(1).jpg" alt="Descenso en cuerda FLUIR Vertical" loading="lazy">
+        <img src="images/20261025_114509(1).jpg" alt="Aventura vertical en Potrerillos" loading="lazy">
+        <img src="images/20261025_121028(1).jpg" alt="Descenso de montaña por cuerda" loading="lazy">
+        <img src="images/20261025_114518(1).jpg" alt="Experiencia vertical de montaña" loading="lazy">
+        <img src="images/20261025_113623(1).jpg" alt="FLUIR Vertical en Potrerillos, Mendoza" loading="lazy">
         <img src="images/20261030_113516(1).jpg" alt="Aventura FLUIR Vertical" loading="lazy">
       </div>
     </div>
@@ -637,7 +780,7 @@ a:focus-visible {
 
   <section class="experience">
     <article class="card reverse">
-      <div class="photo full">
+      <div class="photo full" role="img" aria-label="Experiencia FLUIR Full Experience, rafting y montaña en Potrerillos">
         <span class="photo-label">04 / DÍA COMPLETO</span>
       </div>
       <div class="card-content">
@@ -657,12 +800,12 @@ a:focus-visible {
     <div class="gallery">
       <h3>Así se vive FLUIR FULL EXPERIENCE</h3>
       <div class="gallery-grid">
-        <img src="images/20260927_113406.jpg" alt="FLUIR Full Experience" loading="lazy">
+        <img src="images/20260927_113406.jpg" alt="FLUIR Full Experience en Potrerillos" loading="lazy">
         <img src="images/20261021_153232.jpg" alt="Aventura FLUIR Full Experience" loading="lazy">
-        <img src="images/20261022_161600.jpg" alt="Experiencia FLUIR" loading="lazy">
-        <img src="images/20260927_132714.jpg" alt="Río y montaña FLUIR" loading="lazy">
-        <img src="images/20261017_115407.jpg" alt="Aventura en Mendoza" loading="lazy">
-        <img src="images/20260919_164825.jpg" alt="FLUIR Full Experience" loading="lazy">
+        <img src="images/20261022_161600.jpg" alt="Experiencia de río y montaña FLUIR" loading="lazy">
+        <img src="images/20260927_132714.jpg" alt="Río y montaña en Potrerillos" loading="lazy">
+        <img src="images/20261017_115407.jpg" alt="Aventura outdoor en Mendoza" loading="lazy">
+        <img src="images/20260919_164825.jpg" alt="Jornada FLUIR Full Experience" loading="lazy">
       </div>
     </div>
   </section>
